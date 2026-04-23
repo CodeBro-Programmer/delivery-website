@@ -1,0 +1,836 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.animCard {
+    transition: transform 0.3s ease;
+}
+
+.animCard:hover{
+   transform: scale(1.05);
+    
+}
+
+
+body{
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom,white 0%,
+    white 45.5%,
+    black 45.5%,
+    black 70%,
+    white 70%,
+    white 100%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+}
+
+p{
+    font-size: 0.8rem;
+}
+
+h3{
+     font-family: cursive;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: orange;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1{
+    color: black;
+    font-weight: bolder;
+    font-family: cursive;
+}
+
+h1 i {
+  color: whitesmoke;
+  margin-right: 8px;
+}
+
+
+/* ===== BUTTON ENHANCEMENT (ADDED ONLY) ===== */
+button{
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border-radius: 6px;
+}
+
+button:hover{
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+button:active{
+    transform: scale(0.97);
+}
+
+/* Hero Section */
+.hero{
+    height: 35vh;
+    width: 90%;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.hero-content{
+    width: 75%;
+    height: 97%;
+}
+
+.hero-content h2{
+    margin-top: 5%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.hero-content span{
+    color: orange;
+}
+
+.hero-content p{
+    margin-top: 3%;
+    font-size: 0.7rem;
+}
+
+.para{
+    white-space: pre-line;
+    max-height: 50px;
+    overflow-y: auto;
+}
+
+.hero-content article{
+    width: 50%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.hero-content article div{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2%;
+}
+
+.hero-content button{
+    font-size: 0.4rem;
+    width: 50px;
+    height: 70%;
+    background-color: orange;
+    border: none;
+}
+
+.hero-content{
+    width: 80%;
+}
+
+.hero-content input{
+    font-size: 0.5rem;
+    width: 70%;
+    height: 60%;
+    outline: none;
+}
+
+.hero-content .hero-img{
+      mix-blend-mode: multiply;
+}
+
+/* featured categories */
+.featured-cont{
+    min-height: 300px;
+    width: 93%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-cont h3{
+    text-align: left;
+}
+
+.featured-cont p{
+    font-size: 0.65rem;
+}
+
+.featured-cont .div-cont{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.featured-cont article div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: none;
+    height: 100%;
+    width: 30%;
+    gap: 15px;
+    font-size: 0.6rem;
+    font-weight: bold;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.20);
+}
+
+.featured-cont article div button{
+    font-size: 0.5rem;
+    height: 100%;
+    min-width: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1{
+      background: url(images/burger.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+
+.div2{
+      background: url(images/heathy-meals.jpg) ;
+       background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+
+.div3{
+      background: url(images/local-dishes.jpg);
+       background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+
+.description{
+    width: 90%;
+    height: 20%;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: orange;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 2px;
+}
+
+.description button{
+    border: none;
+    font-weight: bolder;
+}
+
+/* Our Services Section */
+.services{
+    min-height: 280px;
+    width: 93%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.services article{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 19px;
+}
+
+.services div{
+    height: 100%;
+    width: 30%;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    justify-content: space-around;
+    font-size: 0.65rem;
+    margin-top: 5px;
+
+    /* ADDED */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.20);
+}
+
+.services img{
+    border: none;
+    height: 40%;
+    width: 60%;
+}
+
+.services h4{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.services p{
+    font-size: 0.65rem;
+}
+
+.unique{
+    background-color: orange;
+    color: white;
+}
+
+/* what people say about us */
+.testimonial{
+    min-height: 310px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    color: white;
+}
+
+.testimonial .Img-art{
+    width: 55%;
+    
+}
+
+.testimonial .Img-art img{
+    height: 100%;
+    width: 100%;
+
+    /* ADDED */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.testimonial .cont-art{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.testimonial p{
+    font-size: 0.65rem;
+}
+
+.testimonial-img2{
+    height: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+    margin-top: 11%;
+}
+
+.testimonial-img2 img{
+    height: 100%;
+    width: 25%;
+    border: 2px solid;
+    border-radius: 3px;
+}
+
+.testimonial button{
+    margin-top: 20%;
+    background-color: orange;
+    width: 25px;
+    height: 20px;
+    font-size: 0.7rem;
+    border: none;
+}
+
+/* Our special chefs */
+.chef-cont{
+    min-height: 270px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 45px;
+    margin-bottom: 36px;
+}
+
+.chef-cont .chef-profile{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.chef-cont div{
+    height: 200px;
+    width: 23%;
+    border: none;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px;
+    margin-top: 10px;
+
+    /* ADDED */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.20);
+}
+
+.chef1{
+    background: url(images/chef1.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.chef2{
+    background: url(images/chef2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.chef3{
+    background: url(images/chef3.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.chef4{
+    background: url(images/chef4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.chef-cont div article{
+    width: 100%;
+    background-color: orange;
+    font-size: 0.6rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+}
+
+/*latest blogs*/
+.blogs-cont{
+    min-height: 270px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.blogs-cont p{
+    font-size: 0.6rem;
+}
+
+.blog-cards{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 210px;
+}
+
+.blog1{
+    background: url(images/blog1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blog2{
+    background:url(images/blog2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blog3{
+    background: url(images/blog3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blog-cards div{
+    border: none;
+    width: 28%;
+    font-size: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    border-radius: 12px;
+    margin-top: 15px;
+
+    /* ADDED */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.20);
+}
+
+.blog-cards button{
+    font-size: 0.5rem;
+    padding: 4px;
+    background-color: orange;
+    border: none;
+
+}
+
+.blog-cards div .img-arti{
+    height: 55%;
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-radius: 12px;
+    box-shadow: 0px 0px 1px;
+}
+
+.img-arti button{
+    margin: 7px;
+}
+
+.second-blog-btn{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: orange;
+}
+
+footer p{
+    font-size: 0.6rem;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+body{
+     background: linear-gradient(to bottom,white 0%,
+    white 45.5%,
+    black 45.5%,
+    black 72.5%,
+    white 72.5%,
+    white 100%);
+}
+
+#home,
+#about,
+#contact,
+#menu,
+#blog{
+  scroll-margin-top: 75px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 97%;
+    padding: 10px 20px;
+}
+
+.hero{
+    margin-top: 95px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.hero article{
+    width: 180px;
+}
+
+main{
+    gap: 2px;
+}
+
+.featured-cont .description{
+    padding: 0px 4px;
+}
+
+.featured-cont p{
+    font-size: 0.5rem;
+}
+
+.services div h4{
+    font-size: 0.9rem;
+}
+
+.services div p{
+    font-size: 0.5rem;
+    margin-top: -18px;
+}
+
+.blog-cards p{
+    font-size: 0.5rem;
+}
+
+
+.nav-icon{
+    display: block;
+    height: 30px;
+    width: 30px;
+    border: none;
+    margin-right: 5px;
+    
+}
+
+
+.nav-links{
+    position: absolute;
+    top: 85px;
+    right: 0;
+    background: black;
+    padding: 15px 10px;
+   
+    display: none;
+}
+
+.nav-links.display{
+     display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 120px;
+    transform: translateX(0px);
+    transition: transform 0.3s ease;
+}
+
+.display a{
+    text-decoration: none;
+    color: orange;
+    font-family: cursive;
+}
+
+ .featured-cont button{
+        width: 30px;
+        box-shadow: 0px 0px 2px;
+    }
+
+     .para{
+        max-height: 20px;
+        overflow-y: auto;
+        margin-top: -5px;
+    }
+
+    footer{
+        width: 100%;
+        font-size: 0.5rem;
+    }
+
+    .quick-links{
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px)and (max-width: 1030px) {
+    body{
+     background: linear-gradient(to bottom,white 0%,
+    white 46%,
+    black 46%,
+    black 72%,
+    white 72%,
+    white 100%);
+}
+
+    header{
+        width: 98%;
+        padding: 10px 10px;
+    }
+
+    .nav-links{
+        gap: 30px;
+    }
+
+    .hero{
+        height: 150px;
+        width: 90% ;
+    }
+
+    .hero-content{
+        gap: 2px;
+        width: 65%;
+    }
+
+    .para{
+        max-height: 20px;
+        overflow-y: auto;
+    }
+
+    main{
+        gap: 2px;
+    }
+
+    .nav-icon{
+        display: none;
+    }
+    
+     a{
+    text-decoration: none;
+    color: white;   
+    }
+
+    .featured-cont button{
+        width: 50px;
+        box-shadow: 0px 0px 2px;
+    }
+}
+
+@media (min-width: 1031px) and (max-width: 1700px) {
+     body{
+     background: linear-gradient(to bottom,white 0%,
+    white 41%,
+    black 41%,
+    black 75%,
+    white 75%,
+    white 100%);
+}
+
+    header{
+        width: 99%;
+        padding: 10px 10px;
+    }
+
+    .nav-links{
+        gap: 30px;
+    }
+
+    .hero{
+     
+        height: 150px;
+        width: 90% ;
+    }
+
+    .hero-content{
+        gap: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 65%;
+    }
+
+    .hero-content h2{
+        margin-top: 1%;
+    }
+
+    .hero-content p{
+        margin-top: 0.5%;
+    }
+
+    .hero-content article{
+        margin-top: 2.4%;
+        width: 240px;
+    }
+
+
+    main{
+        gap: 2px;
+    }
+
+    .chef-cont div{
+        height: 340px;
+    }
+
+    .blog-cards{
+        height: 220px;
+    }
+
+    .nav-icon{
+        display: none;
+    }
+    
+     a{
+    text-decoration: none;
+    color: white;   
+    }
+
+    .featured-cont button{
+        width: 50px;
+        box-shadow: 0px 0px 2px;
+    }
+    
+     .para{
+        max-height: 40px;
+        overflow-y: auto;
+    }
+}
+
+
+/* ANIMATIONS*/
+.hero.hero-anim{
+    animation: drop 0.9s ease-in forwards;
+}
+
+@keyframes drop {
+    0%{
+        opacity: 0;
+        transform: translateY(-100vh);
+        z-index: 0;
+    }
+    50%{
+       opacity: 0.7; 
+        transform: translateY(-50vh);
+        z-index: 0;
+    }
+    100%{
+        opacity: 1; 
+        transform: translateY(0);
+    }
+}
+
+
+
+
