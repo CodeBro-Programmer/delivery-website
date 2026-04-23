@@ -557,7 +557,7 @@ footer p{
     font-size: 0.6rem;
 }
 
-@media (min-width: 375px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
 body{
      background: linear-gradient(to bottom,white 0%,
     white 45.5%,
